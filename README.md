@@ -5,7 +5,7 @@ Para poder rodar os testes da aplicação utilize comando a seguir desde a pasta
     
     source run_test.sh
 
-Ou para rodar a aplicação no lcoalhost:7000:
+Ou para rodar a aplicação no localhost:7000:
     
     source run_api.sh
 
