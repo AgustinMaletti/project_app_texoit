@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">-->
+<!--    <meta content="" name="description">-->
+<!--    <meta content="" name="author">-->
+<!--    <title>ScrapyBoy</title>-->
+<!--    <link rel="icon" type="image/jpg" href="/static/images/whiteballicon.jpg" >-->
+<!--    &lt;!&ndash; Bootstrap Core CSS &ndash;&gt;-->
+<!--    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    &lt;!&ndash; Custom Fonts &ndash;&gt;-->
+<!--    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"-->
+<!--     type="text/css">-->
+<!--    <link as='font' href="/static/fonts/Righteous-Regular.ttf">-->
+<!--    <link href="/static/css/style.min.css" rel="stylesheet">-->
+<!--    <link href="/static/css/custom.css" rel="stylesheet">-->
+<!--    <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">-->
+    
+{% block head %}
+
+{% endblock head %}
+
+<!--</head>-->
+
+<body>
+{% block top %}
+
+{% endblock top %}
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+     {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+            {{ message }}
+        </div>
+     {% endfor %}
+    {% endif %}
+{% endwith %}
+
+{% block content %}
+
+{% endblock content%}
+
+{% block information1 %}
+{% endblock %}
+
+{% block information2 %}
+{% endblock %}
+
+{% block information3 %}
+{% endblock %}
+
+{% block products %}
+{% endblock %}
+
+{% block opinion %}
+{% endblock %}
+
+{% block opinion2 %}
+{% endblock %}
+
+{% block opinion3 %}
+{% endblock %}
+
+{% block skills %}
+{% endblock %} 
+
+
+{% block prices %}
+{% endblock %}
+
+{% block form %}
+{% endblock %}
+
+{% block foot %}
+{% endblock  %}
+
+
+
+
+</body>
+
+<!--<script src="/static/vendor/jquery/jquery.min.js"></script>-->
+<!--<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="/static/js/style.min.js"></script>-->
+<!-- <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script> -->
+
+
+{% block script %}
+
+{% endblock script %}
+
+</html>
