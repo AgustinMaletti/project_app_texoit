@@ -151,9 +151,9 @@ Este endpoint permite eliminar filmes.
 #### /delete_movie/id=id_number
 **Retorna:**
 
-    [
+    
       {
         "status": "movie deleted"
       }
-    ]
+    
 

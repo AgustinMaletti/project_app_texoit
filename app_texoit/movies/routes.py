@@ -100,7 +100,7 @@ def patch_movie(id_number, year: int=None, title: str=None, studios: str=None, p
 def delete_movie(id_number):
     try:
         Movie.query.filter_by(id=id_number).delete()
-        data = jsonify([{"status": "movie deleted"}])
+        data = jsonify({"status": "movie deleted"})
         response = make_response(data, 200)
         return response
     except Exception as error:
